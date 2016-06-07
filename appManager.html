@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example offline web-app</title>
+
+    <script src="appManager.js"></script>
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css">
+
+</head>
+
+<body>
+    <div id="installation" class="container">
+        <div class="jumbotron">
+            <h1>Hello!</h1>
+            <p>This web app requires to be installed before you can use it! <br/>Press the <i>Install now</i> button to start!</p>
+            <br/>
+            <p><button id="installBtn" class="btn btn-primary btn-lg" href="#" role="button">Install now</button></p>
+
+            <div id="installProgress" class="hidden">
+                <br/>
+                <label id="progresStatus">Installing</label>
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <span class="sr-only">40% Complete (success)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="uninstallation" class="container hidden">
+        <div class="jumbotron">
+            <h2>Warning!</h2>
+            <p>By clicking <i>Uninstall now</i> you will loose all you locall data!</p>
+            <br/>
+            <p>
+                <button id="uninstallBtn" class="btn btn-danger btn-lg" href="#" role="button">Uninstall now</button>
+                <button id="cancel" class="btn btn-default btn-lg" href="#" role="button">Cancel</button>
+            </p>
+
+            <div id="uninstallProgress" class="hidden">
+                <br/>
+                <label id="progresStatus">Uninstalling</label>
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                        <span class="sr-only">40% Complete (success)</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example offline web-app</title>
+
+</head>
+
+<body>
+    <script>
+        if (window.applicationCache.status === 0) {
+            window.location.assign("appManager.html");
+        }
+        else {
+            window.location.assign("dashboard.html");
+        }
+    </script>
+</body>
+
+</html>

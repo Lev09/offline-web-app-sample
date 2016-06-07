@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# v1.0.0
+
+index.html
+appManager.html
+appManager.html?uninstall=true
+appManager.js
+node_modules\bootstrap\dist\css\bootstrap.css
+
+dashboard.html
+dashboard.js
